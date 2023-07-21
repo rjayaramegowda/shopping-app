@@ -1,8 +1,9 @@
 import React from "react";
+import IsFavoriteSM from "../components/IsFavoriteSM";
 
 const CarouselPage = () => {
   return (
-    <div className="col d-md-none mb-5">
+    <div className="col d-md-none mb-5 position-relative">
       <div
         id="myCarousel"
         className="carousel slide mb-6"
@@ -45,6 +46,8 @@ const CarouselPage = () => {
           </div>
         </div>
       </div>
+
+      <IsFavoriteSM />
     </div>
   );
 };
