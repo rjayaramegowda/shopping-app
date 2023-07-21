@@ -83,7 +83,7 @@ const MainPage = () => {
         </div>
       </section>
       <section className="row" style={{ marginBottom: 500 }}>
-        <div className="col-4 offset-4 text-center">
+        <div className="col-md-4 offset-md-4 text-center">
           <div className=" my-5 text-uppercase">
             <a href="#" className="btn btn-link">
               {" "}
