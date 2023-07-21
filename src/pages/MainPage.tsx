@@ -2,6 +2,7 @@ import React from "react";
 import SizeGuideTab from "../components/SizeGuideTab";
 import SizeGuide from "../components/SizeGuide";
 import ColorGuide from "../components/ColorGuide";
+import CarouselPage from "./CarouselPage";
 
 const MainPage = () => {
   return (
@@ -43,9 +44,7 @@ const MainPage = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-4 d-md-none mb-5">
-            <img src="images/pic01.jpeg" className="img-fluid" />
-          </div>
+          <CarouselPage />
           <div className="col-md-4 d-none d-md-block">
             <img src="images/pic01.jpeg" className="img-fluid" />
             <img src="images/pic02.jpeg" className="img-fluid mt-2" />
