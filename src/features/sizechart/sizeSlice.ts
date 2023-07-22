@@ -3,13 +3,13 @@ import { RootState } from '../../app/store';
 
 export interface SizeState {
   selectedColor: string;
-  selectedSize: 'XS' | 'S' | 'M' |'L' | 'XXL';
+  selectedSize: 'XS' | 'S' | 'M' |'L' | 'XXL' | '';
   isFavorite:boolean;
 }
 
 const initialState: SizeState = {
   selectedColor: "Conchiglia 1",
-  selectedSize: 'L',
+  selectedSize: '',
   isFavorite: false
 };
 

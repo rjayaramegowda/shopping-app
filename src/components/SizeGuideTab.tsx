@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../app/hooks";
 import { selectedSize, setSize } from "../features/sizechart/sizeSlice";
 
@@ -6,10 +6,22 @@ const SizeGuideTab = () => {
   const dispatch = useAppDispatch();
   const size = useAppSelector(selectedSize);
 
+  useEffect(() => {
+    let data = localStorage.getItem("size");
+    if (data) {
+      dispatch(setSize(data));
+    }
+  }, []);
+
+  function setSizeHandler(value: string) {
+    dispatch(setSize(value));
+    localStorage.setItem("size", value);
+  }
+
   return (
     <div className="col">
       <button
-        onClick={() => dispatch(setSize("XS"))}
+        onClick={() => setSizeHandler("XS")}
         type="button"
         className={
           size === "XS"
@@ -20,7 +32,7 @@ const SizeGuideTab = () => {
         XS
       </button>
       <button
-        onClick={() => dispatch(setSize("S"))}
+        onClick={() => setSizeHandler("S")}
         type="button"
         className={
           size === "S"
@@ -32,7 +44,7 @@ const SizeGuideTab = () => {
       </button>
 
       <button
-        onClick={() => dispatch(setSize("M"))}
+        onClick={() => setSizeHandler("M")}
         type="button"
         className={
           size === "M"
@@ -44,7 +56,7 @@ const SizeGuideTab = () => {
       </button>
 
       <button
-        onClick={() => dispatch(setSize("L"))}
+        onClick={() => setSizeHandler("L")}
         type="button"
         className={
           size === "L"
@@ -56,7 +68,7 @@ const SizeGuideTab = () => {
       </button>
 
       <button
-        onClick={() => dispatch(setSize("XXL"))}
+        onClick={() => setSizeHandler("XXL")}
         type="button"
         className={
           size === "XXL"
