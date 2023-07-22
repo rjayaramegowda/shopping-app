@@ -4,6 +4,7 @@ import SizeGuide from "../components/SizeGuide";
 import ColorGuide from "../components/ColorGuide";
 import CarouselPage from "./CarouselPage";
 import IsFavoriteSM from "../components/IsFavoriteSM";
+import IsFavorite from "../components/IsFavorite";
 
 const MainPage = () => {
   return (
@@ -46,11 +47,15 @@ const MainPage = () => {
             </div>
           </div>
           <CarouselPage />
-          <div className="col-md-4 d-none d-md-block position-relative">
-            <img src="images/pic01.jpeg" className="img-fluid" />
-            <img src="images/pic02.jpeg" className="img-fluid mt-2" />
-            <img src="images/pic03.jpeg" className="img-fluid mt-2" />
-            <IsFavoriteSM />
+          <div className="col-md-4 d-none d-md-block ">
+            <div className="position-relative">
+              <div>
+                <img src="images/pic01.jpeg" className="img-fluid" />
+                <img src="images/pic02.jpeg" className="img-fluid mt-2" />
+                <img src="images/pic03.jpeg" className="img-fluid mt-2" />
+              </div>
+              <IsFavorite />
+            </div>
           </div>
           <div className="col-md-4">
             <div className="md-sticky-snav">
