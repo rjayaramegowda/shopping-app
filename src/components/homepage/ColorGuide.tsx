@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../app/hooks";
-import { selectedColor, setColor } from "../features/sizechart/sizeSlice";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { selectedColor, setColor } from "../../features/sizechart/sizeSlice";
 
 const ColorGuide = () => {
   const dispatch = useAppDispatch();

@@ -1,5 +1,5 @@
 import React from "react";
-import IsFavoriteSM from "../components/IsFavoriteSM";
+import IsFavoriteSM from "../IsFavoriteSM";
 
 const CarouselPage = () => {
   return (

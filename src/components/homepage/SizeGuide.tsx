@@ -1,7 +1,7 @@
 import React from "react";
 import SizeGuideTab from "./SizeGuideTab";
-import { useAppSelector } from "../app/hooks";
-import { selectedSize } from "../features/sizechart/sizeSlice";
+import { useAppSelector } from "../../app/hooks";
+import { selectedSize } from "../../features/sizechart/sizeSlice";
 
 const SizeGuide = () => {
   const size = useAppSelector(selectedSize);

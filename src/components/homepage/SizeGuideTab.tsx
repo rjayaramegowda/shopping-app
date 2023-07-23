@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../app/hooks";
-import { selectedSize, setSize } from "../features/sizechart/sizeSlice";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { selectedSize, setSize } from "../../features/sizechart/sizeSlice";
 
 const SizeGuideTab = () => {
   const dispatch = useAppDispatch();

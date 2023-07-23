@@ -1,6 +1,6 @@
 import React from "react";
-import { isFavorite, setFavorite } from "../features/sizechart/sizeSlice";
-import { useAppDispatch, useAppSelector } from "../app/hooks";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { isFavorite, setFavorite } from "../../features/sizechart/sizeSlice";
 
 function IsFavoriteSM() {
   const dispatch = useAppDispatch();

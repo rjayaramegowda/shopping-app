@@ -1,9 +1,8 @@
 import React from "react";
-import SizeGuideTab from "../components/SizeGuideTab";
-import SizeGuide from "../components/SizeGuide";
-import ColorGuide from "../components/ColorGuide";
 import CarouselPage from "./CarouselPage";
-import IsFavoriteSM from "../components/IsFavoriteSM";
+import IsFavoriteSM from "../IsFavoriteSM";
+import ColorGuide from "../ColorGuide";
+import SizeGuide from "../SizeGuide";
 
 const MainPage = () => {
   return (
